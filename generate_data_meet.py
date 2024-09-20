@@ -34,31 +34,6 @@ for team in team_results:
         <td>{team['score']}</td>
     </tr>
     '''
-
-# athlete_details = [
-#     {
-#         'name': 'Matthew Guikema', 
-#         'time': '17:35.10', 
-#         'place': '1', 
-#         'image': 'images/matthew_guikema.jpg',  # Placeholder for image path
-#         'feedback': 'Led the team with a strong performance.'
-#     },
-#     {
-#         'name': 'Nicholas Yuan', 
-#         'time': '17:44.40', 
-#         'place': '2', 
-#         'image': 'images/nicholas_yuan.jpg', 
-#         'feedback': 'Followed closely with an excellent time.'
-#     },
-#     {
-#         'name': 'Oskar MacArthur', 
-#         'time': '18:37.50', 
-#         'place': '3', 
-#         'image': 'images/oskar_macarthur.jpg', 
-#         'feedback': 'Achieved a personal record.'
-#     },
-#     # Additional athletes could be extracted similarly from the paragraph description
-# ]
 athlete_results = []
 for row in csv_data[7:]:  # Start after the table header in row 7
     if len(row) == 8:  # Ensure each row has the correct number of columns
