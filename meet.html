@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>{meet_name}</title>
+    <title>{{meet_name}}</title>
 </head>
 <body>
     <header>
-        <h1>{meet_name}</h1>
-        <h2>{meet_date}</h2>
+        <h1>{{meet_name}}</h1>
+        <h2>{{meet_date}}</h2>
     </header>
     <section id="team-results">
         <h2>Overall Team Results</h2>
-        <p><a href="{team_results_link}">Click here for full team results</a></p>
+        
         <table>
             <thead>
                 <tr>
@@ -23,7 +23,7 @@
                 </tr>
             </thead>
             <tbody>
-                {team_rows}
+                {{team_rows}}
             </tbody>
         </table>
     </section>
@@ -35,14 +35,14 @@
                     <th>Name</th>
                     <th>Time</th>
                     <th>Place</th>
-                    <th>Image</th>
-                    <th>Feedback</th>
+                    
                 </tr>
             </thead>
             <tbody>
-                {athlete_rows}
+                {{athlete_rows}}
             </tbody>
         </table>
     </section>
+    <p><a href="{{team_results_link}}">Click here for full team results</a></p>
 </body>
 </html>
