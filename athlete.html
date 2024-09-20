@@ -46,9 +46,6 @@ html_content = f'''<!DOCTYPE html>
     <section id="team-results">
         <h2>{Meets}</h2>
         <table>
-            <tbody>
-                {meet_rows_for_athlete}
-            </tbody>
             <thead>
                 <tr>
                     <th>Place</th>
@@ -58,6 +55,9 @@ html_content = f'''<!DOCTYPE html>
                     <th>Meet_Name</th>
                 </tr>
             </thead>
+           <tbody>
+                {meet_rows_for_athlete}
+            </tbody>
         </table>
     </section>
     <section>
